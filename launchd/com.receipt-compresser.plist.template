@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.receipt-compresser</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON__</string>
+        <string>__PROJECT_DIR__/monitor.py</string>
+        <string>--watch</string>
+        <string>__WATCH_DIR__</string>
+        <string>--save</string>
+        <string>__SAVE_DIR__</string>
+        <string>--existing</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>__PROJECT_DIR__</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/receipt-compresser.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/receipt-compresser.log</string>
+</dict>
+</plist>
